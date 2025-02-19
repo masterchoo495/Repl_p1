@@ -80,6 +80,11 @@ MASTER_PASSWORD='slavepass';
 
 Поднимаю 2 контейнера с mysql:
 ```
+ubuntu@vm2:~/mysqlrepl$ docker compose up -d
+WARN[0000] /home/ubuntu/mysqlrepl/compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion 
+[+] Running 2/2
+ ✔ Container mysql-master  Started                                                                                                                    
+ ✔ Container mysql-slave   Started
 ubuntu@vm2:~/mysqlrepl$ docker ps -a
 CONTAINER ID   IMAGE       COMMAND                  CREATED        STATUS              PORTS                                                    NAMES
 778f45e76956   mysql:8.0   "docker-entrypoint.s…"   22 hours ago   Up About a minute   33060/tcp, 0.0.0.0:3307->3306/tcp, [::]:3307->3306/tcp   mysql-slave
