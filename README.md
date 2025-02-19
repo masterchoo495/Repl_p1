@@ -86,6 +86,18 @@ CONTAINER ID   IMAGE       COMMAND                  CREATED        STATUS       
 ced8d5d15fb9   mysql:8.0   "docker-entrypoint.s…"   22 hours ago   Up About a minute   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp     mysql-master
 ```
 
+Проверяю настройки репликации на Master:
+![alt text](https://github.com/masterchoo495/Repl_p1/blob/main/001.png)
+
+Проверяю настройки репликации на Slave:
+![alt text](https://github.com/masterchoo495/Repl_p1/blob/main/002.png)
+
+Проверяю работоспособность репликации путем создания тестовой БД на Master:
+![alt text](https://github.com/masterchoo495/Repl_p1/blob/main/003.png)
+
+Проверяю наличие на Slave ранее созданной БД на Master. База данных появилась, репликация работает:
+![alt text](https://github.com/masterchoo495/Repl_p1/blob/main/004.png)
+
 ---
 
 ## Дополнительные задания (со звёздочкой*)
